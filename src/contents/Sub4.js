@@ -10,7 +10,7 @@ class Sub4 extends Component {
 
     render() {
         return (
-            <div>
+            <div className="content">
                 Sub4
 
             </div>

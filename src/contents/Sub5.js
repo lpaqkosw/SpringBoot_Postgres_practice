@@ -13,7 +13,7 @@ class Sub5 extends Component {
             <div>
                 Sub5
 
-            </div>
+            </div> 
         );
     }
 }

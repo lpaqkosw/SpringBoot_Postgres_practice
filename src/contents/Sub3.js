@@ -9,10 +9,25 @@ class Sub3 extends Component {
 
 
     render() {
-        return (
-            <div>
-                Sub3
+        const divstyle={
+            display:'flex',
+        }
+        const style={
+            flex:2,
+            backgroundColor:'black',
+            margin:'5vw',
+            width:'5vw',
+            height:'5vh'
 
+        }
+        return (
+            <div style={divstyle}>
+            <div style={style}>
+            </div>
+            <div style={style}>
+            </div>
+            <div style={style}>
+            </div>
             </div>
         );
     }
