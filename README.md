@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * To try out material-ui
 * To try using PostgreSQL
 
-## Frameworks, Tools Used
+## Frameworks & Tools Used
 * Reactjs & React-router
 * Spring Boot 
 * PostgreSQL
@@ -41,11 +41,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-### Difficulties I have faced
+## Difficulties I have faced
 * Learning new things (Postgres, Jwt, SpringBoot, etc.)
 * Styling & responsive styling
 
-### Future plans
+## Future plans
 * use a cloud db so that I can access my todo anywhere
 * try out docker & docker-compose to package
 * deploy on cloud (maybe)
