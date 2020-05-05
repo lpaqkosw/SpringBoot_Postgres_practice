@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # A simple ToDo list
+2020.04
+A simple TODO list for personal use
 
 ## Objective
 * For personal use(for now)
