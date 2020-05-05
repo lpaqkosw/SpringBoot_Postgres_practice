@@ -16,16 +16,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Features
 1. Login/Logout
-![log in/out](https://github.com/lpaqkosw/readmeImages/tree/master/muitest/loginout.gif)
+![login/out](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/loginout.gif)
 
 2. JWT authentication
-![auth](https://github.com/lpaqkosw/readmeImages/tree/master/muitest/auth.gif)
+![auth](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/auth.gif)
 
 2. Draggable slots
-![draggable](https://github.com/lpaqkosw/readmeImages/tree/master/muitest/drag.gif)
+![draggable](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/drag.gif)
 
 3. Add/Delete Todo
-![adddelete](https://github.com/lpaqkosw/readmeImages/tree/master/muitest/adddelete.gif)
+![adddelete](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/adddelete.gif)
 
 4. Autosave
 ![autosave1](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/autosave1.gif)
