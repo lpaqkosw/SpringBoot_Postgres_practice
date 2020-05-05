@@ -2,6 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # A simple ToDo list
 2020.04
+<br>
 A simple TODO list for personal use
 
 ## Objective
