@@ -16,24 +16,29 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
 ### 1. Login/Logout
-![login/out](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/loginout.gif)
+<img src="https://github.com/lpaqkosw/readmeImages/blob/master/muitest/loginout.gif" width="400" height="400">
+
 
 
 ### 2. JWT authentication
-![auth](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/auth.gif)
+<img src="https://github.com/lpaqkosw/readmeImages/blob/master/muitest/auth.gif" width="400" height="400">
+
 
 
 ### 3. Draggable slots
-![draggable](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/drag.gif)
+<img src="https://github.com/lpaqkosw/readmeImages/blob/master/muitest/drag.gif" width="400" height="339">
+
 
 
 ### 4. Add/Delete Todo
-![adddelete](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/adddelete.gif)
+<img src="https://github.com/lpaqkosw/readmeImages/blob/master/muitest/adddelete.gif" width="400" height="487">
+
 
 
 ### 5. Autosave
-![autosave1](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/autosave1.gif)
-![autosave2](https://github.com/lpaqkosw/readmeImages/blob/master/muitest/autosave2.gif)
+<img src="https://github.com/lpaqkosw/readmeImages/blob/master/muitest/autosave1.gif" width="400" height="394">
+<img src="https://github.com/lpaqkosw/readmeImages/blob/master/muitest/autosave2.gif" width="400" height="394">
+
 
 
 ### Difficulties I have faced
