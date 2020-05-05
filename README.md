@@ -1,8 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## A simple ToDo list
+# A simple ToDo list
 
-In the project directory, you can run:
+### Objective
+* For personal use(for now)
+* To keep in track of what I will do, what I am doing, and what I have done
+* To try out the famous reactjs
+* To try out material-ui
+
+### Features
+1. 
+
 
 ### `npm start`
 
