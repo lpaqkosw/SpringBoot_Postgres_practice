@@ -21,10 +21,60 @@ class App extends Component {
     super(props);
     this.drawerToggle = this.drawerToggle.bind(this);
     this.state={
-      drawerOpen: false
+      loginWindow: false,
+      id:"",
+      pw:"",
+      loggedin:false,
+      token:"",
+      drawerOpen: false,
+      textError:false
     }
+    this.handleLoginWindow = this.handleLoginWindow.bind(this);
+    this.handleIdChange = this.handleIdChange.bind(this);
+    this.handlePwChange = this.handlePwChange.bind(this);
+    this.handleLogin= this.handleLogin.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
+  }
+
+  handleLoginWindow(){
+    this.setState({loginWindow:!this.state.loginWindow});
+  }
+  handleIdChange(a){
+    this.setState({id:a.target.value});
+  }
+  handlePwChange(a){
+    this.setState({pw:a.target.value})
+  }
+  handleLogin(){
+    const requestOption = {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({'username':this.state.id,'password':this.state.pw})
+    }
+    console.log(requestOption.body)
+    fetch('http://175.119.109.254:3001/login',requestOption)
+        .then(response=> response.json())
+        .then(data=>{
+          if(data.token==="" || !data.token){
+            this.setState({textError:true});
+            alert("login failed");
+            return;
+          }
+          else{
+            console.log(data.token);
+            this.setState({token:data.token,loggedin:true,loginWindow:!this.state.loginWindow});
+            return;
+          }
+        })
+        .catch(error=>{
+            console.error("error!",error);
+        })    
   }
  
+  handleLogout (){
+    alert("logged out");
+    this.setState({loggedin:false,id:"",pw:"",token:""});
+  }
     drawerToggle(e){
       this.setState({
         drawerOpen: !this.state.drawerOpen
@@ -35,7 +85,7 @@ class App extends Component {
     return(
       <Router>
       <div className="App">
-      <HeaderMenu drawerOpen={this.state.drawerOpen} drawerToggle={this.drawerToggle}/>
+      <HeaderMenu drawerOpen={this.state.drawerOpen} textError={this.state.textError} handleLogout={this.handleLogout} drawerToggle={this.drawerToggle} loggedin={this.state.loggedin} loginWindow={this.state.loginWindow} handleLoginWindow={this.handleLoginWindow} handleIdChange={this.handleIdChange} handlePwChange={this.handlePwChange} handleLogin={this.handleLogin}/>
       <div>
         <Switch>
           <Route path="/m1">
@@ -45,7 +95,7 @@ class App extends Component {
             <Sub1 />
           </Route>
           <Route path="/sub2">
-            <Sub2 />
+            <Sub2 id={this.state.id} token={this.state.token} loggedin={this.state.loggedin} key={this.state.loggedin}/>
           </Route>
           <Route path="/sub3">
             <Sub3 />
