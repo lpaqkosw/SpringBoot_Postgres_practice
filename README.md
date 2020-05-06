@@ -56,6 +56,7 @@ A simple TODO list for personal use
 * Styling & responsive styling
 <br><br><br><br>
 ## Future plans
+* Sign up feature
 * use a cloud db so that I can access my todo anywhere
 * try out docker & docker-compose to package
 * deploy on cloud (maybe)
