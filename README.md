@@ -7,10 +7,10 @@ A simple TODO list for personal use
 
 ## Objective
 * For personal use(for now)
-* To keep in track of what I will do, what I am doing, and what I have done
-* To try out the famous reactjs
-* To try out material-ui
-* To try out PostgreSQL
+* Keep in track of what I will do, what I am doing, and what I have done
+* Learn the famous reactjs
+* Try material-ui
+* Use PostgreSQL
 <br><br><br><br>
 ## Frameworks & Tools Used
 * Reactjs & React-router
