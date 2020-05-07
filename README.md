@@ -57,6 +57,6 @@ A simple TODO list for personal use
 * try out docker & docker-compose to package
 * deploy on cloud (maybe)
 * polish the whole thing
-* Add redux
+* Use redux for state management
 <br><br><br><br>
 # Thank you
