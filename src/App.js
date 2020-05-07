@@ -9,6 +9,7 @@ import Sub3 from './contents/Sub3';
 import Sub4 from './contents/Sub4';
 import Sub5 from './contents/Sub5';
 import Sub6 from './contents/Sub6';
+import LoginForm from './contents/LoginForm';
 import {
   BrowserRouter as Router,
   Switch,
@@ -108,6 +109,9 @@ class App extends Component {
           </Route>
           <Route path="/sub6">
             <Sub6 />
+          </Route>
+          <Route path="/login">
+            <LoginForm />
           </Route>
         </Switch>
       </div>

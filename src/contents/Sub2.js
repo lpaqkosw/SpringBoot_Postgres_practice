@@ -24,7 +24,8 @@ const styles = theme => ({
         height: 'auto',
         width:'auto',
         maxWidth:'70vw',
-        minWidth:'35vw'
+        minWidth:'35vw',
+        
     },
     paperNew:{
         flex: 2,
@@ -32,6 +33,7 @@ const styles = theme => ({
         marginTop: theme.spacing(3),
         backgroundColor: '#ff8080',
         maxWidth:'25vw',
+        
         
     },
     paperInprogress:{

@@ -9,7 +9,14 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Tab from '@material-ui/core/Tab';
 import Drawer from '@material-ui/core/Drawer';
-import Sidebar from './Sidebar'
+import Sidebar from './Sidebar';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    NavLink
+  } from "react-router-dom";
 import {Dialog,DialogTitle,DialogContent,DialogContentText,TextField,DialogActions} from '@material-ui/core/';
 const styles = theme => ({
     root: {
@@ -47,7 +54,7 @@ class HeaderMenu extends Component {
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={() => {this.props.drawerToggle()}}>
                     <MenuIcon />
                 </IconButton>
-                <Tab label="Topic" className={classes.topic}></Tab>
+                <Tab label="Topic" className={classes.topic} component={NavLink} to="/"></Tab>
                 <Tab label="Topic" className={classes.topic}></Tab>
                 {logInOut}
                 </Toolbar>
@@ -56,7 +63,7 @@ class HeaderMenu extends Component {
         <Sidebar drawerOpen={this.props.drawerOpen} drawerToggle={this.props.drawerToggle}/>
 
         {/* Login */}
-        <Dialog open={this.props.loginWindow} aria-labelledby="form-dialog-title">
+        <Dialog open={this.props.loginWindow} aria-labelledby="form-dialog-title" onClose={this.props.handleLoginWindow}>
                     <DialogTitle id="form-dialog-title" style={{textAlign:'center'}}>Login</DialogTitle>
                     <DialogContent>
                     <TextField
@@ -68,6 +75,7 @@ class HeaderMenu extends Component {
                             onChange={this.props.handleIdChange}
                             style={{display:'block',margin:'5px'}}
                             error={this.props.textError}
+                            fullWidth={true}
                     />
                      <TextField
                             margin="normal"
@@ -75,9 +83,12 @@ class HeaderMenu extends Component {
                             label="Password"
                             type="password"
                             onChange={this.props.handlePwChange}
+                            style={{display:'block',margin:'5px'}}
                             error={this.props.textError}
+                            fullWidth={true}
                     />
                     </DialogContent>
+                    <Typography display="block" variant='overline' style={{margin:'1.5rem'}}>Don't have an account? <NavLink to="/login" onClick={this.props.handleLoginWindow}>Sign up</NavLink></Typography>
                     <DialogActions>
                         <Button color="primary" onClick={this.props.handleLoginWindow}>
                             Cancel
