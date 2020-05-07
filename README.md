@@ -10,7 +10,7 @@ A simple TODO list for personal use
 * To keep in track of what I will do, what I am doing, and what I have done
 * To try out the famous reactjs
 * To try out material-ui
-* To try using PostgreSQL
+* To try out PostgreSQL
 <br><br><br><br>
 ## Frameworks & Tools Used
 * Reactjs & React-router
@@ -51,10 +51,6 @@ A simple TODO list for personal use
 <br><br><br><br>
 
 
-## Difficulties I have faced
-* Learning new things (Postgres, Jwt, SpringBoot, etc.)
-* Styling & responsive styling
-<br><br><br><br>
 ## Future plans
 * Sign up feature
 * use a cloud db so that I can access my todo anywhere
