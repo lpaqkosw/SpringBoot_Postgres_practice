@@ -1,0 +1,14 @@
+    loginWindow :false
+    id:""
+    pw:""
+    loggedin:false
+    token:""
+        drawerOpen:false
+    textError:false
+            todoItem1:[]
+            todoItem2:[]
+            todoItem3:[]
+            addTodo:""
+            dialogOpen:false
+?fabOpen:false
+            trashOpen:false

@@ -1,12 +1,34 @@
-import {DRAWER_OPEN} from './action';
+import * as actions from './action';
 
-const initialState={
-    drawerOpen: false
+const LoginInitialState={
+    id:"",
+    pw:"",
+    loginWindow:false,
+    loggedIn:false,
+    token:"",
+    loginError:false
+    
 };
 
-function reducer(state=initialState,action){
+const MainUIInitialState={
+    drawerOpen:false,
+}
+
+const TODOInitialState={
+    todoItem1:[],
+    todoItem2:[],
+    todoItem3:[],
+    addTodo:"",
+    TodoDialogOpen:false,
+    loggedIn:false,
+    token:"",
+    trashOpen:false
+}
+
+function Login(state=LoginInitialState,action){
     switch(action.type){
-        case DRAWER_OPEN: return{
+        case actions.ID_ONCHANGE: 
+            return{
             
         }
     }
