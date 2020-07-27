@@ -3,20 +3,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # A simple ToDo list
 2020.04
 <br>
-A simple TODO list for personal use
+A simple TODO list 
 
-## Objective
-* For personal use(for now)
-* Keep in track of what I will do, what I am doing, and what I have done
-* Learn the famous reactjs
-* Try material-ui
-* Use PostgreSQL
-<br><br><br><br>
 ## Frameworks & Tools Used
-* Reactjs & React-router
+* Reactjs
 * Spring Boot 
 * PostgreSQL
-* Material-Ui-react
 <br><br><br><br>
 ## Features
 ### 1. Login/Logout
@@ -52,11 +44,6 @@ A simple TODO list for personal use
 
 
 ## Future plans
-* Sign up feature
-* use a cloud db so that I can access my todo anywhere
-* try out docker & docker-compose to package
-* deploy on cloud (maybe)
-* polish the whole thing
-* Use redux for state management
+* Add redux
 <br><br><br><br>
-# Thank you
+
